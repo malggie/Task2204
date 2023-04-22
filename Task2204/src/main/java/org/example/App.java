@@ -56,18 +56,17 @@ public class App
         listTwo.put("Jajka", 2);
         listTwo.put("Kiełbasa", 2);
 
-        listTwo.forEach((k, v) -> listOne.merge(k, v, Integer::sum));
-        System.out.println(listOne);
+        // zrobić 3 listę
+        // dodać wszystko z listy nr 1,
+        // dla każdego elementu z listy 2 jeżeli klucz występuje już w liście 3, to dodać jego wartość
+        // w przeciwnym razie dodać klucz i wartość / put
 
 
-        Map result = new HashMap(listTwo);
-        result.keySet().retainAll(listOne.keySet());
-        System.out.println(result);
 
 
-        Map<String, Integer> difference = new HashMap<>(listOne);
-        difference.remove(listTwo);
-        System.out.println(difference);
+
+
+
 
 
 
